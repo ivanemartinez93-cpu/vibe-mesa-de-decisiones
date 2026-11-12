@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mesa de decisiones</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body><header><div class="wrap"><p class="eyebrow">UN ESPACIO PARA PENSAR MEJOR</p><h1>Mesa de decisiones</h1><p>Ordená tus ideas, compará opciones y retomá lo importante cuando quieras.</p></div></header>
+<main class="wrap grid"><section class="panel" aria-labelledby="form-title"><h2 id="form-title">Nueva decisión</h2><p>Empezá por el tema. Podés completar el resto más adelante.</p>
+<form id="decision-form"><label for="tema">Tema <span aria-hidden="true">*</span></label><input id="tema" name="tema" maxlength="160" required placeholder="Ej. Cómo organizar nuestros proyectos">
+<label for="objetivo">¿Qué queremos lograr?</label><textarea id="objetivo" name="objetivo" rows="2"></textarea>
+<label for="alternativas">Alternativas</label><textarea id="alternativas" name="alternativas" rows="3" placeholder="Una opción por línea"></textarea>
+<label for="criterios">Criterios para comparar</label><textarea id="criterios" name="criterios" rows="2" placeholder="Ej. tiempo, costo y facilidad"></textarea>
+<label for="pendientes">Datos que faltan</label><textarea id="pendientes" name="pendientes" rows="2"></textarea>
+<button type="submit">Guardar decisión</button></form><p class="hint">Guardado en este navegador. No incluyas claves ni datos sensibles.</p></section>
+<section class="panel" aria-labelledby="saved-title"><div class="section-head"><div><h2 id="saved-title">Decisiones guardadas</h2><p>Conservá el contexto para retomarlo.</p></div><button class="secondary" id="exportar" type="button">Exportar</button></div><p id="aviso" role="status" aria-live="polite"></p><div id="decisiones"></div></section></main>
+<footer class="wrap">Tus datos quedan en este navegador. Exportá una copia para conservarlos.</footer></body></html>
+
